@@ -1,7 +1,13 @@
-const main = () => {
-  if (document.querySelector('h1.hello-world')) {
-    document.querySelector('h1.hello-world').textContent = 'Hello, World!'
-  }
+const getWeather = () => {
+  console.log('getting the weather')
+  //get the user input
+  const query = document.querySelector('#searchQuery').value 
+
+  //send api call
+  // output to the screen
+
 }
 
-document.addEventListener('DOMContentLoaded', main)
+
+document.querySelector('.search-button').addEventListener('click', getWeather)
+
